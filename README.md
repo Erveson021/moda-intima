@@ -1,2 +1,154 @@
-# moda-intima
-Moda Intima feminina
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sua Loja de Roupas Íntimas</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fff0f5;
+      color: #333;
+    }
+    header {
+      background: #ff69b4;
+      color: white;
+      padding: 15px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+    }
+    nav {
+      margin-top: 10px;
+    }
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+    }
+    .banner {
+      background: url("https://via.placeholder.com/1200x400/ffb6c1/333?text=Moda+Íntima+Feminina") no-repeat center;
+      background-size: cover;
+      height: 300px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-size: 2em;
+      font-weight: bold;
+      text-shadow: 2px 2px 4px #000;
+    }
+    .produtos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 30px;
+    }
+    .produto {
+      background: white;
+      border-radius: 10px;
+      padding: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.2s;
+    }
+    .produto:hover {
+      transform: scale(1.03);
+    }
+    .produto img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+    .produto h3 {
+      margin: 10px 0 5px;
+    }
+    .produto p {
+      color: #666;
+      font-size: 14px;
+    }
+    .preco {
+      font-size: 18px;
+      font-weight: bold;
+      color: #ff1493;
+      margin: 10px 0;
+    }
+    .btn-comprar {
+      display: inline-block;
+      padding: 10px 15px;
+      background: #ff1493;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .btn-comprar:hover {
+      background: #c71585;
+    }
+    footer {
+      background: #ff69b4;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Lingerie & Estilo</h1>
+    <nav>
+      <a href="#produtos">Produtos</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <div class="banner">
+    Coleção Exclusiva 💕
+  </div>
+
+  <section class="produtos" id="produtos">
+    <div class="produto">
+      <img src="https://via.placeholder.com/250x250/ffc0cb/000?text=Conjunto+1" alt="Produto 1">
+      <h3>Conjunto Rosa</h3>
+      <p>Lingerie delicada em renda rosa.</p>
+      <div class="preco">R$ 89,90</div>
+      <a class="btn-comprar" href="https://wa.me/5599999999999?text=Olá,+quero+comprar+o+Conjunto+Rosa" target="_blank">Comprar no WhatsApp</a>
+    </div>
+    <div class="produto">
+      <img src="https://via.placeholder.com/250x250/f08080/000?text=Conjunto+2" alt="Produto 2">
+      <h3>Conjunto Vermelho</h3>
+      <p>Lingerie sexy em renda vermelha.</p>
+      <div class="preco">R$ 99,90</div>
+      <a class="btn-comprar" href="https://wa.me/5599999999999?text=Olá,+quero+comprar+o+Conjunto+Vermelho" target="_blank">Comprar no WhatsApp</a>
+    </div>
+    <div class="produto">
+      <img src="https://via.placeholder.com/250x250/ff69b4/000?text=Conjunto+3" alt="Produto 3">
+      <h3>Conjunto Preto</h3>
+      <p>Lingerie clássica em renda preta.</p>
+      <div class="preco">R$ 79,90</div>
+      <a class="btn-comprar" href="https://wa.me/5599999999999?text=Olá,+quero+comprar+o+Conjunto+Preto" target="_blank">Comprar no WhatsApp</a>
+    </div>
+  </section>
+
+  <section id="sobre" style="padding:30px; text-align:center;">
+    <h2>Sobre Nós</h2>
+    <p>Somos uma loja dedicada à moda íntima feminina, trazendo conforto, qualidade e estilo para valorizar a beleza da mulher.</p>
+  </section>
+
+  <section id="contato" style="padding:30px; text-align:center;">
+    <h2>Contato</h2>
+    <p>📱 WhatsApp: (99) 99999-9999</p>
+    <p>📸 Instagram: @sualoja</p>
+    <p>📧 Email: contato@sualoja.com</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Lingerie & Estilo - Todos os direitos reservados</p>
+  </footer>
+</body>
+</html>
